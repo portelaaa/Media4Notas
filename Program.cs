@@ -20,21 +20,21 @@ else{
       notafinal = (nota1 + nota2 + nota3 + nota4) / 4;
 
     if(notafinal > 6){
-        Console.BackgroundColor = ConsoleColor.Green;
+        Console.ForegroundColor = ConsoleColor.Green;
 
         Console.WriteLine($"Você ficou com média {notafinal}. Resultado : Aprovado! ");
         
         Console.ResetColor();
     }
 else if(notafinal < 5 ){
-       Console.BackgroundColor = ConsoleColor.Red;
+       Console.ForegroundColor = ConsoleColor.Red;
 
        Console.WriteLine($"Você ficou com média {notafinal}. Resultado: Reprovado! ");
 
        Console.ResetColor();
 }
 else{
-      Console.BackgroundColor = ConsoleColor.Yellow; 
+      Console.ForegroundColor = ConsoleColor.Yellow; 
 
       Console.WriteLine($"Você ficou com média {notafinal}. Resultado: Em recuperação!");
 
